@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+}
+
+a{
+    background-color: #333;
+    color: white;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+
+a:hover {
+    background-color: #fff;
+    color: #333
+}
+
+p{
+    animation-name: slidein;
+    animation-duration: 4s;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width:50%;
+        color: blue ;
+    }
+    30% {
+        color: #f00
+    }
+    70%{
+        color: #0f0
+    }
+to {
+    margin-left: 0%;
+}
+    }
